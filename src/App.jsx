@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Navbar from './components/Navbar';
+import Landing from './pages/Landing';
 import Home from './pages/Home';
 import CreateSet from './pages/CreateSet';
 import StudySet from './pages/StudySet';
@@ -15,7 +16,8 @@ export default function App() {
         <Navbar />
         <main style={{ flex: 1 }}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Landing />} />
+            <Route path="/sets" element={<Home />} />
             <Route path="/create" element={<CreateSet />} />
             <Route path="/edit/:id" element={<CreateSet />} />
             <Route path="/set/:id" element={<StudySet />} />

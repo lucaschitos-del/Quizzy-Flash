@@ -44,3 +44,24 @@
   align-items: center;
   gap: 0.75rem;
 }
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.navbar-transparent {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
